@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.main-img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.child {
+    position: relative;
+    flex-grow: 1;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.child a:hover .text-overlay {
+    opacity: 1;
+}
+
+.role-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px auto;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.role-item-active {
+    width: 15%;
+    height: auto;
+}
+
+.role-name {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cnname {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.introduce {
+    font-size: 1.2em;
+    line-height: 1.5; 
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.title {
+    font-size: 3.0em;
+    margin-bottom: 10px; 
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
